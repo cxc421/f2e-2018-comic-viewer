@@ -1,0 +1,14 @@
+@import 'globals';
+
+.header {
+  background: black;
+  height: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .logo {
+    @include Logo;
+    color: $green;    
+  }
+}

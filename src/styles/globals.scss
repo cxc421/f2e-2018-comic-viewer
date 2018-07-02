@@ -1,0 +1,55 @@
+$green: #50ff44;
+$black: #000;
+$white: #fff;
+
+$light-grey: #f2f2f2;
+$dark-op-10: rgba(0,0,0,.1);
+$dark-op-80: rgba(0,0,0,.8);
+$white-op-20: rgba(255,255,255, .2);
+
+$page-width: 1024px;
+$center-width: 620px;
+$change-page-area-width: 80px;
+
+@mixin Logo {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 36px;
+  line-height: 24px;
+}
+
+@mixin Title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 24px;  
+}
+
+@mixin Title2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+@mixin Title3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+@mixin Subtitle {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin Paragraph {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin Label  {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;  
+}
