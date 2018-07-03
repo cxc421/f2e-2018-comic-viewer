@@ -21,7 +21,7 @@ $change-page-area-width: 80px;
 @mixin Title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 24px;  
+  line-height: 36px;  
 }
 
 @mixin Title2 {
@@ -52,4 +52,12 @@ $change-page-area-width: 80px;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;  
+}
+
+@mixin clearfix {
+  &::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
 }

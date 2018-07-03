@@ -13,7 +13,7 @@ const App = () => {
           <Route component={Header} />
           <Switch>
             <Route exact path="/:book" component={Home} />
-            <Route path="/:book/:chapter" component={Page} />
+            <Route path="/:book/:chapter/:page" component={Page} />
             <Redirect to="my_hexschool" />
           </Switch>
         </React.Fragment>

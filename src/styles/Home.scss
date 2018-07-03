@@ -1,5 +1,89 @@
 @import 'globals';
 
 .home {
-  
+  max-width: $center-width;
+  margin: 0 auto;
+  position: relative;
+
+  .content {
+    margin-top: 24px;
+    // background: black;
+    position: relative;
+
+    @include clearfix;
+
+    & > * {
+      float: left;
+      // width: 50%;
+    }
+
+    .left {
+      width: 300px;
+      img {
+        width: 100%;
+        display: block;
+        border: solid 4px black;
+      }      
+    }
+
+    .right {
+      // background: pink;
+      width: calc(100% - 300px);
+
+      .title {
+        background: black;
+        @include Title;
+        padding: 8px 0;
+        text-align: center;
+        color: white;
+      }
+
+      .body {
+        padding: 16px 0 0 20px;
+
+
+        .body-top {
+          @include clearfix;
+
+          > * {
+            float: left;
+          }
+
+          .body-top-left {
+            padding-right: 20px;
+          }
+
+          h2 {
+            @include Subtitle;
+            margin-bottom: 8px;
+          }
+
+          p {
+            @include Paragraph;
+            margin-bottom: 8px;
+          }
+        }
+
+        .body-bottom {
+          // background: skyblue;
+          margin-top: 16px;
+
+          h2 {
+            @include Subtitle;
+            margin-bottom: 8px;
+          }
+
+          p {
+            @include Paragraph;
+            margin-bottom: 15px;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+
+    }
+  }
 }
