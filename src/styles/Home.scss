@@ -86,4 +86,56 @@
 
     }
   }
+
+  .chapter-area {
+    min-height: 100px;
+    // background: black;
+    margin-top: 24px;
+
+    h2 {
+      display: inline-block;
+      @include Title2;
+      background: black;
+      color: white;
+      padding: 8px 24px;
+    }
+
+    ul.chapter-list {
+      border: solid 4px black;
+      padding: 7px 0;
+      list-style: none;
+      margin: 0; 
+
+      li {
+        
+        a {
+          padding: 9px 24px;
+          @include Paragraph;
+
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          color: black;
+
+          &:hover {
+            background: black;
+            color: white;            
+          }
+
+            &.new {
+              &::after {
+                content: 'NEW';
+                display: inline-block;
+                padding: 2px 12px;
+                @include Label;
+                line-height: 14px;
+                background: $green;
+                margin-left: 16px;
+                color: black;
+              }
+            }          
+        }
+      }
+    }
+  }
 }
