@@ -14,3 +14,4 @@
 
 - Color Theme (light, dark)
 - Preview Slider 
+- AD layout
