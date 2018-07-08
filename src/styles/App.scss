@@ -1,3 +1,5 @@
+@import 'globals';
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -9,8 +11,14 @@ html, body {
 
 body {
   font-family: 'Roboto', sans-serif;
+  background: $light-grey;
 }
 
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
